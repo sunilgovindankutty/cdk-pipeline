@@ -23,8 +23,8 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
         actionName: 'GitHub',
         output: sourceArtifact,
         oauthToken: SecretValue.secretsManager('github-token'),
-        owner: 'OWNER',
-        repo: 'REPO',
+        owner: 'sunilgovindankutty',
+        repo: 'https://github.com/sunilgovindankutty/cdk-pipeline.git',
         trigger: codepipeline_actions.GitHubTrigger.POLL,
       }),
 
